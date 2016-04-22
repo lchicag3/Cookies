@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+  <title>Postobón - Licitaciones - Crear</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/dashboard.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+
+  <!-- Font -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,400,300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-fixed-top loader">
+    <div class="container-fluid">
+      <div class="navbar-header col-sm-3 col-md-2">
+        <a class="navbar-brand" href="#"><img src="img/logo-licitaciones.png" alt="Licitaciones" />
+        </a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Nueva licitación</button>
+            </div>
+          </form>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Andrés Montoya <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Perfil</a>
+            </li>
+            <li><a href="#">Cerrar sesión</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Buscar...">
+        </div>
+      </form>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar">
+        <ul class="nav nav-sidebar">
+          <li class="nav-header">Licitaciones</li>
+          <li class="active"><a href="#">Mis licitaciones <span class="sr-only">(current)</span></a>
+          </li>
+          <li><a href="#">Mis tareas</a>
+          </li>
+          <li><a href="#">Todas las licitaciones</a>
+          </li>
+          <li><a href="#">Reportes</a>
+          </li>
+        </ul>
+        <ul class="nav nav-sidebar">
+          <li class="nav-header">Administración</li>
+          <li><a href="">Usuarios</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <h1 class="page-header">Título de la licitación</h1>
+        <div class="form-general">
+          <div class="container-basic-info">
+            <div class="form-group col-lg-6">
+              <label>Tipo de licitación </label>
+              <p class="form-control-static">Tipo de licitación</p>
+            </div>
+            <div class="form-group col-lg-6">
+              <label>Proveedores</label>
+              <p class="form-control-static">Proveedor 1, Proveedor 2, Proveedor 3</p>
+            </div>
+            <div class="form-group col-lg-6">
+              <label>Área del solicitante </label>
+              <p class="form-control-static">Área del solicitante</p>
+            </div>
+            <div class="form-group col-lg-6">
+              <label>Fecha de recepción de la oferta </label>
+              <p class="form-control-static">25 de marzo de 2015</p>
+            </div>
+            <div class="form-group col-lg-12">
+              <label>Descripción </label>
+              <p class="form-control-static">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra ornare sapien vitae fermentum. Nulla non orci sit amet orci dictum accumsan sed ut arcu. Ut non erat vel ligula luctus viverra. Aliquam congue lacus sit amet ornare ornare. Cras sed lectus orci.</p>
+            </div>
+            <div class="form-group col-lg-12">
+              <label for="">Documento de términos y condiciones</label>
+              <p class="form-control-static"><a href="javascript:;">Descargar documento</a>
+              </p>
+            </div>
+            <div class="form-group col-lg-12">
+              <button type="submit" class="btn btn-warning">Editar</button>
+              <button type="button" class="btn btn-danger btn-reject" data-toggle="modal" data-target="#myModal">Rechazar</button>
+              <button type="submit" class="btn btn-success">Aprobar</button>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel">Rechazo de la solicitud</h4>
+                </div>
+                <div class="modal-body">
+                  <label>Razones del rechazo a la solicitud </label>
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-default btn-cancel">Cancelar</button>
+                  <button type="submit" class="btn btn-danger">Enviar rechazo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-offers">
+          <h2 class="page-header page-header-sec page-header-check"><i class="fa fa-check-circle"></i> <i class="fa fa-clock-o"></i> <i class="fa fa-pencil-square-o"></i> Recepción de ofertas</h2>
+          <ul class="main-list">
+            <li class="row">
+              <div class="col-md-6">
+                <h4 class="page-header">Proveedor 2</h4>
+              </div>
+
+              <div class="col-md-6 container-buttons">
+                <a href="javascript:;" class="btn btn-default" data-toggle="modal" data-target="#modal-no-offer">No envió oferta</a> <a href="javascript:;" class="btn btn-default" data-toggle="modal" data-target="#modal-offer">Sí envió oferta</a>
+              </div>
+            </li>
+            <li class="row">
+              <div class="col-md-6">
+                <h4 class="page-header">Proveedor 2</h4>
+              </div>
+
+              <div class="col-md-6 container-buttons">
+                <a href="javascript:;" class="btn btn-default">No envió oferta</a> <a href="javascript:;" class="btn btn-default">Sí envió oferta</a>
+              </div>
+            </li>
+            <li class="row">
+              <div class="col-md-6">
+                <h4 class="page-header">Proveedor 2</h4>
+              </div>
+
+              <div class="col-md-6 container-buttons">
+                <a href="javascript:;" class="btn btn-default">No envió oferta</a> <a href="javascript:;" class="btn btn-default">Sí envió oferta</a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="form-group col-lg-12">
+            <label for="" class="subtitle-label">Documento acta de apertura</label>
+            <p class="form-control-static"><a href="javascript:;">Descargar documento</a>
+            </p>
+          </div>
+
+          <div class="form-group col-lg-12 form-group-buttons">
+            <button type="submit" class="btn btn-success">Finalizar recepción de ofertas</button>
+          </div>
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="modal-offer" tabindex="-1" role="dialog" aria-labelledby="modal-offer" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel">Recepción de la oferta</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="form-general">
+                    <div class="form-group col-lg-12">
+                      <label>Fecha de recepción</label>
+                      <input type="" name="" class="form-control" id="" value="">
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <label for="">Oferta</label>
+                      <input type="file" id="">
+                      <p class="help-block">Adjuntar el documento.</p>
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <label>Comentarios</label>
+                      <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-default">Cancelar</button>
+                  <button type="submit" class="btn btn-danger">Eliminar</button>
+                  <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="modal-confirmation" tabindex="-1" role="dialog" aria-labelledby="modal-confirmation" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel">Confirmación</h4>
+                </div>
+                <div class="modal-body">
+
+
+
+
+                  <div class="form-general">
+                    <div class="form-group col-lg-12">
+
+                      <div class="alert alert-info" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        Se enviará un correo a los proveedores invitándolos a participar en la licitación.
+                      </div>
+
+
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <label>Para</label>
+                      <p class="form-control-static">sosvenezolano@bolivarianos.com, sosvenezolano@bolivarianos.com, sosvenezolano@bolivarianos.com, sosvenezolano@bolivarianos.com, sosvenezolano@bolivarianos.com, sosvenezolano@bolivarianos.com, sosvenezolano@bolivarianos.com.</p>
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <label>Agregar más destinatarios</label>
+                      <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-default">Cancelar</button>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="modal-no-offer" tabindex="-1" role="dialog" aria-labelledby="#modal-no-offer" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel">Recepción de la oferta</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="form-general">
+                    <div class="form-group col-lg-12">
+                      <label>Fecha de recepción</label>
+
+
+                      <p class="form-control-static">23 de febrero de 2015</p>
+
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <label for="">Oferta</label>
+                      <p class="form-control-static"><a href="javascript:;">Descargar documento</a>
+                      </p>
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <label>Comentarios</label>
+                      <p class="form-control-static">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan, enim eget suscipit consequat, nulla ex sagittis nisl, sit amet iaculis leo lacus sed enim. Integer ut ipsum euismod justo luctus ornare a sit amet neque. Fusce ligula mi, laoreet a leo ut, auctor auctor dui. Morbi vel pulvinar justo, ut gravida est. Vivamus odio mi, ultrices non odio eu, hendrerit pharetra lectus. Duis quis luctus tortor. Vestibulum eleifend erat sit amet lorem gravida, vel vehicula lectus porttitor. Nullam quis magna turpis. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-default">Cancelar</button>
+                  <button type="submit" class="btn btn-danger">Eliminar</button>
+                  <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+        <div class="container-ratings" style="clear: both;">
+          <h2 class="page-header page-header-sec page-header-check"><i class="fa fa-check-circle"></i> Calificación y selección de ganador</h2>
+          <ul class="main-list">
+            <li class="row">
+              <div class="col-md-5">
+                <h4 class="page-header">Proveedor 2</h4>
+              </div>
+
+              <div class="col-md-4 container-buttons">
+                Aquí va el control de ratings
+              </div>
+
+              <div class="col-md-3 container-buttons">
+                <a href="javascript:;" class="btn btn-default">Seleccionar como ganador</a>
+              </div>
+            </li>
+            <li class="row">
+              <div class="col-md-5">
+                <h4 class="page-header">Proveedor 2</h4>
+              </div>
+
+              <div class="col-md-4 container-buttons">
+                Aquí va el control de ratings
+              </div>
+
+              <div class="col-md-3 container-buttons">
+                <a href="javascript:;" class="btn btn-default">Seleccionar como ganador</a>
+              </div>
+            </li>
+            <li class="row">
+              <div class="col-md-5">
+                <h4 class="page-header">Proveedor 2</h4>
+              </div>
+
+              <div class="col-md-4 container-buttons">
+                Aquí va el control de ratings
+              </div>
+
+              <div class="col-md-3 container-buttons">
+                <a href="javascript:;" class="btn btn-default">Seleccionar como ganador</a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="form-group col-lg-4">
+            <label for="" class="subtitle-label">Documento de recomendación</label>
+            <input type="file" id="">
+            <p class="help-block">Adjuntar el documento.</p>
+          </div>
+
+          <div class="form-group col-lg-8 form-group-button">
+            <button type="submit" class="btn btn-primary">Cargar documento</button>
+          </div>
+
+
+          <div class="form-group col-lg-12 form-group-buttons">
+            <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#modal-confirmation">Finalizar calificación y selección</button>
+          </div>
+
+        </div>
+
+
+        <div class="container-aperture-act container-pending">
+          <h2 class="page-header page-header-sec page-header-cont page-header-pending"><i class="fa fa-clock-o"></i> Acta de apertura</h2>
+          <div class="form-general">
+            <div class="form-group col-lg-6">
+              <input type="file" id="">
+              <p class="help-block">Adjuntar el documento.</p>
+            </div>
+            <div class="form-group col-lg-12">
+              <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+  <!-- Bootstrap core JavaScript
+         ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>
